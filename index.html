@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--Jquery CDN-->
+  <!--<script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>-->
+<!--Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Jquery 란?</h1>
+    <p>자바스크립트 라이브러리</p>
+    <p>자바스크립트 프로그래밍을 아주 간단하게 만들어준다</p>
+    <p>배우기 쉽다</p>
+    
+    <h3>Jquery Download</h3>
+    <p><a href="https://jquery.com/download/">Jquery.com</a>에서 라이브러리 다운로드 or CDN 복사하여 사용</p>
+    
+    <h3>Jquery의 용도</h3>
+    <ul>
+        <li>HTML/DOM manipulation(조작)</li>
+        <li>CSS manipulation</li>
+        <li>HTML event 처리</li>
+        <li>Effects &amp; Animation</li>
+        <li>Ajax etc..</li>
+    </ul>
+    
+    <div id="start">JQuery 스타트</div>
+    
+    <script>
+        //javascript
+//        document.getElementById("start").innerHTML = "JQuery 끝";
+        
+        //jquery
+        //jquery CDN없을때 err: Uncaught ReferenceError: $ is not defined
+        $('document').ready(function(){
+           $('#start').text("JQuery 끝") 
+        });
+    </script>
+</body>
+</html>
